@@ -36,6 +36,10 @@
   <br>
   <body>
     
+    <?php
+        include 'script/send.php';
+    ?>
+
     <container class="info">
       <p class="info txt_1">МОНТАЖ И РЕМОНТ ПЛОСКОЙ КРОВЛИ</p>
       <p class="info txt_2">В ТОЧНЫЕ СРОКИ И ПО ДОСТУПНОЙ ЦЕНЕ</p>
@@ -69,27 +73,11 @@
       </div>
     </container>
 
-    <div class="form-wrapper">
-
-      <form class="contact-form" id="contact-form_1" method="POST" enctype="multipart/form-data">
-          <p class="contact-form__title">Оставьте заявку на расчет стоимости</p>
-          <p class="contact-form__description"></p>
-          <div class="contact-form__input-wrapper">
-              <input name="name" type="text" class="contact-form__input contact-form__input_name"
-                  placeholder="Введите ваше имя">
-              <div class="contact-form__error contact-form__error_name"></div>
-          </div>
-          
-          <div class="contact-form__input-wrapper">
-              <input name="tel" type="tel" class="contact-form__input contact-form__input_tel"
-                  placeholder="Введите ваш телефон">
-              <div class="contact-form__error contact-form__error_tel"></div>
-          </div>
-
-          <button class="contact-form__button" type="submit"> Получить прайс </button>
+    <form action="send.php" method="post">
+      <input type="text" name="fio" placeholder="Укажите Имя" required>
+      <input type="text" name="number" placeholder="Укажите Телефон" required>
+      <input type="submit" value="Отправить">
       </form>
-      
-  </div>
 
     <container class="button_block_mini">
       <div class="button_left_mini">
@@ -311,8 +299,6 @@
     </div>
   </container>
 
-  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -327,7 +313,8 @@
     ></script>
     <script type="text/javascript" src="/script/slick.js"></script>
     <script src="/__/firebase/8.6.5/firebase-app.js"></script>
-    <script src="/mail/js/mail.js"></script>
+    
+
   </body>
 
   <footer> 
