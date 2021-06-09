@@ -473,18 +473,18 @@ footer {
 
 @media screen and (max-width: 550px) {
   .button_left {
-    margin-right: 35rem;
+    margin-right: 15rem;
   }
 
   html {
-    /* background-color: #818181; */
-    width: 500px;
+    width: 100%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
   .button_right {
-    margin-left: 35rem;
+    margin-left: 15rem;
   }
 
   .prioritet-block {
@@ -507,6 +507,11 @@ footer {
     margin-right: auto;
   }
 
+  p.pvh_text {
+    width: 60%;
+    font-size: 12px;
+  }
+
   .slider_img {
     width: 15em;
     padding: 0.7rem;
@@ -522,7 +527,11 @@ footer {
     text-align: center;
   }
 
-  .button_centre {
-    font-size: 11px;
+  button.button_centre {
+    border-radius: 10%;
+  }
+
+  .button_block {
+    width: 85%;
   }
 }
