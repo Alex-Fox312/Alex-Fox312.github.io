@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-    rel="stylesheet"
-    type="text/css"
-    href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <title>Document</title>
   </head>
-
+  
   <header>
     <div class="header_txt">Гарантия 10 лет</div>
     <nav class="menu">
@@ -73,32 +69,100 @@
     
 
     <container class="button_block">
+        
+<!-- Триггер/Открыть модальный -->
+<button id="myBtn3" class="myBtn3">
+  <img class="button_left_img" src="/img/chat.png" alt="chat" />
+  <p>ЧАТ</p>
+</button>
 
-      <div class="button_left">
-        <img class="button_left_img" src="/img/chat.png" alt="chat" />
-        <p>ЧАТ</p>
-      </div>
-      <button class="button_centre">Получить просчёт кровли за 30 мин</button>
-      <div class="button_right">
-        <img class="button_right_img" src="/img/call.png" alt="call" />
-        <p>ЗВОНОК</p>
-      </div>
-    </container>
+<!-- Модальный -->
+<div id="myModal3" class="modal3">
 
- <!-- <form action="send.php" method="post">
-    <input type="text" name="fio" placeholder="Укажите ФИО" required>
-    <input type="number" name="number" placeholder="Укажите number" required>
-    <input type="submit" value="Отправить">
-    </form>  -->
+  <!-- Модальное содержание -->
+  <div class="modal-content">
+    <span class="close3">&times;</span>
+    <p>чат</p>
+  </div>
 
-    <container class="button_block_mini">
-      <div class="button_left_mini">
+</div>
+    
+
+      <!-- Триггер/Открыть модальный -->
+<button id="myBtn"class="button_centre">Получить просчёт кровли за 30 мин</button>
+
+<!-- Модальный -->
+<div id="myModal" class="modal">
+
+  <!-- Модальное содержание -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p> <form action="send.php" method="post">
+      <input type="text" name="fio" placeholder="Укажите ФИО" required>
+      <input type="number" name="number" placeholder="Укажите номер" required>
+      <input type="submit" value="Отправить">
+      </form> </p>
+  </div>
+
+</div>
+
+
+  
+<!-- Триггер/Открыть модальный -->
+<button id="myBtn2" class="myBtn2">
+  <img class="button_right_img" src="/img/call.png" alt="call" />
+  <p>ЗВОНОК</p>
+</button>
+
+<!-- Модальный -->
+<div id="myModal2" class="modal2">
+
+  <!-- Модальное содержание -->
+  <div class="modal-content">
+    <span class="close2">&times;</span>
+    <p>звонок</p>
+  </div>
+
+</div>
+</container>
+
+
+
+
+<container class="button_block_mini ">
+      <div class="button_left_mini ">
+      <button id="myBtn4" class="myBtn4">
         <img class="button_left_img_mini" src="/img/chat.png" alt="chat" />
+      </button> 
+      
+      <div id="myModal4" class="modal4">
+
+        <div class="modal-content">
+          <span class="close4">&times;</span>
+          <p>Пишите нам в вайбер         <a href="tel:+380 97 615 12 65">
+            <img class="viber" src="/img/viber_icon_130796.png" alt="">
+          </a></p>
+        </div>
       </div>
-      <div class="button_right_mini">
-        <img class="button_right_img_mini" src="/img/call.png" alt="call" />
       </div>
-    </container>
+
+      <button id="myBtn5" class="myBtn5">
+          <div class="button_right_mini " >
+            <img class="button_right_img_mini" src="/img/call.png" alt="call" />
+          </button>
+          <div id="myModal5" class="modal5">
+
+            <!-- Модальное содержание -->
+            <div class="modal-content">
+              <span class="close5">&times;</span>
+              <div class="block_number">
+                <a class="number" href="tel:+380 67 379 50 56">+380 67 379 50 56</a>
+                <a class="number" href="tel:+380 97 615 12 65">+380 97 615 12 65</a>
+              </div>
+            </div>
+</div>
+
+    </container> 
 
     <container class="slider_block">
       <div class="slider">
@@ -212,7 +276,7 @@
         <div class="prioritet-block_left">
           <div>
             <p class="txt_2">В ШТАТЕ ТОЛЬКО ПРОФЕССИОНАЛЫ</p>
-            <div>
+            <div class="punkt">
               <li>проектировщики</li>
               <li>инженеры</li>
               <li>прорабы</li>
@@ -311,23 +375,24 @@
     </div>
   </container>
 
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-      <script src="/__/firebase/8.6.5/firebase-app.js"></script>
-    <script type="text/javascript" src="/script/slick.js"></script>
-    <script src="/script/burger.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
+        <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+        type="text/javascript"
+        src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script src="/__/firebase/8.6.5/firebase-app.js"></script>
+        <script type="text/javascript" src="/script/slick.js"></script>
+        <script src="/script/burger.js"></script>
+        <script src="/script/script.js"></script>
+        
     
     
   </body>
