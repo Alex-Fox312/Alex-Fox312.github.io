@@ -21,6 +21,8 @@ a:hover {
 }
 
 header {
+  font-size: 15px;
+  font-weight: bold;
   position: fixed;
   display: flex;
   justify-content: space-around;
@@ -46,11 +48,20 @@ header {
   padding-top: 0.2rem;
 }
 
+.blcok_chat {
+  background-color: rgba(255, 208, 0, 0.932);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  align-items: center;
+}
+
 .block_number {
   background-color: rgba(255, 208, 0, 0.932);
   border-radius: 0.5rem;
   width: 10rem;
-  height: 3rem;
+  height: 3.5rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -237,7 +248,7 @@ header {
 p.pvh_text {
   width: 45rem;
   height: 4rem;
-  font-size: 28px;
+  font-size: 21px;
   align-items: center;
   display: flex;
   margin-left: auto;
@@ -476,6 +487,10 @@ footer {
     margin-right: 15rem;
   }
 
+  .number {
+    font-size: 12px;
+  }
+
   html {
     width: 100%;
     display: block;
@@ -484,7 +499,7 @@ footer {
   }
 
   .button_right {
-    margin-left: 15rem;
+    display: none;
   }
 
   .prioritet-block {
@@ -526,12 +541,102 @@ footer {
     width: 75%;
     text-align: center;
   }
-
-  button.button_centre {
+  .button_centre {
     border-radius: 10%;
+    font-size: 11px;
   }
 
   .button_block {
     width: 85%;
+    margin-top: -4rem;
   }
+
+  .myBtn2 {
+    margin-left: -5rem;
+  }
+
+  .myBtn3 {
+    margin-right: -5rem;
+  }
+
+  .txt_2 {
+    font-size: 11px;
+  }
+
+  .txt_1 {
+    font-size: 16px;
+  }
+
+  .punkt {
+    display: inline-flex;
+    margin-bottom: 2rem;
+  }
+  .button_right_img_mini {
+    width: 50%;
+    margin-bottom: -6rem;
+    margin-left: 1rem;
+  }
+
+  .button_left_img_mini {
+    width: 50%;
+    margin-bottom: -4rem;
+    margin-left: 1rem;
+  }
+}
+
+/*-------------------------------*/
+
+/* Модальный (фон) */
+.modal,
+.modal2,
+.modal3,
+.modal4,
+.modal5 {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Сидеть на вершине */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0, 0, 0); /* Цвет запасной вариант */
+  background-color: rgba(0, 0, 0, 0.4); /* Черный с непрозрачностью */
+}
+
+/* Модальное содержание/коробка */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% сверху и по центру */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+
+/* Кнопка закрытия */
+.close,
+.close2,
+.close3,
+.close4,
+.close5 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.myBtn,
+.myBtn2,
+.myBtn3,
+.myBtn4,
+.myBtn5 {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
 }
