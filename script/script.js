@@ -1,98 +1,135 @@
+// Получить модальный
+var modal = document.getElementById("myModal");
 
-$(document).ready(function () {
-    $('.slider_des').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        infinite: true,
-        fade: true,
-        cssEase: 'linear',
-        nextArrow: $('.right'),
-        prevArrow: $('.left')
-    });
-});
+// Получить кнопку, которая открывает модальный
+var btn = document.getElementById("myBtn");
 
-$(".slider_des").on("afterChange", function (event, slick, currentSlide, nextSlide) {
-    $(".slide__number").text(`0${currentSlide + 1}/0${slick.slideCount}`);
-});
 
-function addSliderAPI(imgList) {
-    imgList.forEach((itemImg) => {
-        $(`.slider2`).append(
-            `<div class="gallery__cel">
-           <img class="slider-2-img" src="${itemImg.webformatURL}" alt="photo telephone">
-       </div>` )
-    })
+// Получить элемент <span>, который закрывает модальный
+var span = document.getElementsByClassName("close")[0];
+
+// Когда пользователь нажимает на кнопку, откройте модальный
+btn.onclick = function() {
+  modal.style.display = "block";
 }
 
-function imgAPI() {
-    const link = `https://pixabay.com/api/?key=20835570-260a5d18818fba36f5dd73fba&q=retro`;
-    fetch(link)
-        .then((response) => {
-            let myresult = response.json()
-            return myresult;
-        })
-
-
-
-        .then((result) => {
-            addSliderAPI(result.hits);
-            $('.slider2').slick({
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 1500,
-                cssEase: 'linear',
-                nextArrow: $('.right_com'),
-                prevArrow: $('.left_com')
-            });
-        })
-        .catch((error) => {
-            console.log(error);
-        })
+// Когда пользователь нажимает на <span> (x), закройте модальное окно
+span.onclick = function() {
+  modal.style.display = "none";
 }
 
-imgAPI();
+// Когда пользователь щелкает в любом месте за пределами модального, закройте его
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Получить модальный
+var modal2 = document.getElementById("myModal2");
+
+// Получить кнопку, которая открывает модальный
+var btn = document.getElementById("myBtn2");
 
 
-$(document).ready(function () {
-    const overlay = $('#overlay'); 
-    const open_modal = $('.open_modal'); 
-    const close = $('.modal_close, #overlay'); 
-    const modal = $('.modal_div'); 
+// Получить элемент <span>, который закрывает модальный
+var span = document.getElementsByClassName("close2")[0];
 
-    open_modal.click(function (event) { 
-        event.preventDefault(); 
-        const div = $(this).attr('href'); 
-        overlay.fadeIn(400, 
-            function () { 
-                $(div) 
-                    .css('display', 'block')
-                    .animate({ opacity: 1, top: '50%' }, 200);
-            });
-    });
+// Когда пользователь нажимает на кнопку, откройте модальный
+btn.onclick = function() {
+  modal2.style.display = "block";
+}
 
-    close.click(function () { 
-        modal 
-            .animate({ opacity: 0, top: '45%' }, 200, 
-                function () { 
-                    $(this).css('display', 'none');
-                    overlay.fadeOut(400);
-                }
-            );
-    });
-});
+// Когда пользователь нажимает на <span> (x), закройте модальное окно
+span.onclick = function() {
+  modal2.style.display = "none";
+}
+
+// Когда пользователь щелкает в любом месте за пределами модального, закройте его
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+
+// Получить модальный
+var modal3 = document.getElementById("myModal3");
+
+// Получить кнопку, которая открывает модальный
+var btn = document.getElementById("myBtn3");
 
 
-$('#subscribeBtn').click(function (event) {
-    $('#modal').toggleClass('activeModal');
-})
+// Получить элемент <span>, который закрывает модальный
+var span = document.getElementsByClassName("close3")[0];
 
-$('#closeBtn').click(() => $('#modal').toggleClass('activeModal'));
+// Когда пользователь нажимает на кнопку, откройте модальный
+btn.onclick = function() {
+  modal3.style.display = "block";
+}
 
-$('.modal').click(function (e) {
-    if ($(e.target).is('.modal')) {
-        $('#modal').toggleClass('activeModal');
-    }
-});
+// Когда пользователь нажимает на <span> (x), закройте модальное окно
+span.onclick = function() {
+  modal3.style.display = "none";
+}
+
+// Когда пользователь щелкает в любом месте за пределами модального, закройте его
+window.onclick = function(event) {
+  if (event.target == modal3) {
+    modal3.style.display = "none";
+  }
+}
+
+// Получить модальный
+var modal4 = document.getElementById("myModal4");
+
+// Получить кнопку, которая открывает модальный
+var btn = document.getElementById("myBtn4");
+
+
+// Получить элемент <span>, который закрывает модальный
+var span = document.getElementsByClassName("close4")[0];
+
+// Когда пользователь нажимает на кнопку, откройте модальный
+btn.onclick = function() {
+  modal4.style.display = "block";
+}
+
+// Когда пользователь нажимает на <span> (x), закройте модальное окно
+span.onclick = function() {
+  modal4.style.display = "none";
+}
+
+// Когда пользователь щелкает в любом месте за пределами модального, закройте его
+window.onclick = function(event) {
+  if (event.target == modal4) {
+    modal4.style.display = "none";
+  }
+}
+
+
+// Получить модальный
+var modal5 = document.getElementById("myModal5");
+
+// Получить кнопку, которая открывает модальный
+var btn = document.getElementById("myBtn5");
+
+
+// Получить элемент <span>, который закрывает модальный
+var span = document.getElementsByClassName("close5")[0];
+
+// Когда пользователь нажимает на кнопку, откройте модальный
+btn.onclick = function() {
+  modal5.style.display = "block";
+}
+
+// Когда пользователь нажимает на <span> (x), закройте модальное окно
+span.onclick = function() {
+  modal5.style.display = "none";
+}
+
+// Когда пользователь щелкает в любом месте за пределами модального, закройте его
+window.onclick = function(event) {
+  if (event.target == modal5) {
+    modal5.style.display = "none";
+  }
+}
