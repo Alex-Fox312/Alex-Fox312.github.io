@@ -269,6 +269,10 @@ footer {
   justify-content: center;
 }
 
+.myBtn5 {
+  margin-bottom: 2rem;
+}
+
 .button_block_mini {
   display: flex;
   flex-direction: column;
@@ -573,7 +577,7 @@ footer {
   }
   .button_right_img_mini {
     width: 50%;
-    margin-bottom: -6rem;
+    margin-bottom: -3rem;
     margin-left: 1rem;
   }
 
@@ -581,6 +585,10 @@ footer {
     width: 50%;
     margin-bottom: -4rem;
     margin-left: 1rem;
+  }
+
+  .header_txt {
+    font-size: 12px;
   }
 }
 
@@ -639,4 +647,16 @@ footer {
 .myBtn5 {
   border: none;
   background-color: rgba(0, 0, 0, 0);
+}
+
+.modal-content {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5%;
+  font-size: 24px;
+  font-style: bold;
+  background-color: rgba(255, 237, 134, 0.596);
 }
