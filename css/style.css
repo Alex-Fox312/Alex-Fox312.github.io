@@ -617,6 +617,7 @@ footer {
   background-color: #fefefe;
   margin: 15% auto; /* 15% сверху и по центру */
   padding: 20px;
+  z-index: 50;
   border: 1px solid #888;
   width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
 }
@@ -631,6 +632,7 @@ footer {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  z-index: 50;
 }
 
 .close:hover,
