@@ -506,8 +506,19 @@ footer {
 
   .prioritet-block {
     display: flex;
+    text-align: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .prioritet-block_left,
+  .prioritet-block_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0.2rem;
   }
 
   .prioritet_photo {
@@ -550,7 +561,6 @@ footer {
 
   .button_block {
     width: 85%;
-    margin-top: -4rem;
   }
 
   .myBtn2 {
@@ -656,7 +666,7 @@ footer {
   border-radius: 5%;
   font-size: 24px;
   font-style: bold;
-  background-color: rgba(250, 242, 195, 0.596);
+  background-color: rgb(255, 255, 255);
 }
 
 .form {
