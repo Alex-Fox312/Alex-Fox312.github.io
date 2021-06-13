@@ -493,6 +493,11 @@ footer {
     font-size: 12px;
   }
 
+  div.modal-content {
+    width: 40%;
+    font-size: 16px;
+  }
+
   html {
     width: 100%;
     display: block;
