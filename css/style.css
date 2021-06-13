@@ -93,18 +93,21 @@ header {
 }
 
 .block_3 {
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   display: flex;
-  height: 10rem;
+  height: 2rem;
+  padding: 1rem;
 }
 
 .block_3_li {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
 }
 
 .info li {
-  padding: 0.5rem;
+  padding: 0.6rem;
 }
 
 .button_block {
@@ -284,11 +287,6 @@ footer {
   height: 5%;
 }
 
-.button_right_img_mini:hover,
-.button_left_img_mini:hover {
-  width: 4rem;
-}
-
 /*bur-menu*/
 .burg {
   display: none;
@@ -430,7 +428,7 @@ footer {
   }
 
   .txt_1 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .txt_2 {
@@ -577,13 +575,13 @@ footer {
   }
   .button_right_img_mini {
     width: 50%;
-    margin-bottom: -3rem;
+    margin-bottom: 0rem;
     margin-left: 1rem;
   }
 
   .button_left_img_mini {
     width: 50%;
-    margin-bottom: -4rem;
+    margin-bottom: 0rem;
     margin-left: 1rem;
   }
 
@@ -602,7 +600,7 @@ footer {
 .modal5 {
   display: none; /* Скрыто по умолчанию */
   position: fixed; /* Оставаться на месте */
-  z-index: 1; /* Сидеть на вершине */
+  z-index: 100; /* Сидеть на вершине */
   left: 0;
   top: 0;
   width: 100%; /* Полная ширина */
@@ -617,7 +615,6 @@ footer {
   background-color: #fefefe;
   margin: 15% auto; /* 15% сверху и по центру */
   padding: 20px;
-  z-index: 50;
   border: 1px solid #888;
   width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
 }
@@ -632,7 +629,6 @@ footer {
   float: right;
   font-size: 28px;
   font-weight: bold;
-  z-index: 50;
 }
 
 .close:hover,
@@ -660,7 +656,6 @@ footer {
   border-radius: 5%;
   font-size: 24px;
   font-style: bold;
-  z-index: 50;
   background-color: rgba(250, 242, 195, 0.596);
 }
 
@@ -680,12 +675,21 @@ footer {
   right: 0;
   top: 0;
   bottom: 0;
+  overflow: hidden;
 }
 
 .close {
   margin-top: 15%;
   color: #f1f1f1;
   font-size: 5rem;
-  margin-right: 30%;
+  margin-right: 10%;
   z-index: 100;
+}
+
+.external {
+  z-index: 100;
+}
+
+.wrap-footer {
+  display: none;
 }
