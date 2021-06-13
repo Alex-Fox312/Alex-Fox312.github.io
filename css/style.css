@@ -496,6 +496,12 @@ footer {
   div.modal-content {
     width: 40%;
     font-size: 16px;
+    text-align: center;
+  }
+
+  .telegram,
+  .viber {
+    width: 30%;
   }
 
   html {
