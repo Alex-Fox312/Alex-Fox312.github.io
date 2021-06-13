@@ -658,5 +658,31 @@ footer {
   border-radius: 5%;
   font-size: 24px;
   font-style: bold;
-  background-color: rgba(255, 237, 134, 0.596);
+  background-color: rgba(250, 242, 195, 0.596);
+}
+
+.form {
+  height: 30rem;
+  border: none;
+  width: 20rem;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 14rem;
+  z-index: 50;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.close {
+  margin-top: 15%;
+  color: #f1f1f1;
+  font-size: 5rem;
+  margin-right: 30%;
+  z-index: 100;
 }
