@@ -658,6 +658,7 @@ footer {
   border-radius: 5%;
   font-size: 24px;
   font-style: bold;
+  z-index: 50;
   background-color: rgba(250, 242, 195, 0.596);
 }
 
