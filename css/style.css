@@ -608,13 +608,13 @@ footer {
   }
 
   .button_block {
-    width: 70%;
+    width: 80%;
     display: flex;
     position: fixed;
     z-index: 90;
     justify-content: space-around;
-    left: 15%;
-    right: 15%;
+    left: 10%;
+    right: 10%;
     top: 90%;
   }
 
