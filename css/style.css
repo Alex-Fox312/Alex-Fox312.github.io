@@ -117,14 +117,11 @@ header {
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 80%;
-  margin-left: 10%;
 }
 
 .button_centre {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10rem;
+  margin-right: 10rem;
   font-size: 24px;
   padding: 1rem;
   font-weight: bold;
@@ -239,26 +236,35 @@ header {
 
 .pvh_block {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 95%;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
+  font-size: 16px;
+  width: 81%;
+  justify-content: center;
   margin-bottom: 2rem;
 }
 
-.pvh_text_mini {
-  width: 15rem;
-  height: 20rem;
-  border-color: rgb(78, 78, 78);
+.pvh_text_priority {
+  border-color: black;
   border-style: solid;
   border-width: 0.1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
+}
+
+.pvh_text_mini {
+  width: 25rem;
   height: 4rem;
+  margin: 2rem;
   align-items: center;
   display: flex;
   justify-content: center;
   background-color: rgba(131, 207, 59);
+  box-shadow: 0.5rem 0.5rem 0 0 rgba(255, 208, 0, 0.932);
 }
 
 p.pvh_text {
@@ -405,12 +411,10 @@ footer {
   }
 
   .button_left_img {
-    width: 27px;
-    height: 28px;
+    width: 90%;
   }
   .button_right_img {
-    width: 27px;
-    height: 28px;
+    width: 60%;
   }
 }
 
@@ -443,7 +447,7 @@ footer {
   }
 
   .txt_1 {
-    font-size: 28px;
+    font-size: 36px;
   }
 
   .txt_2 {
@@ -482,6 +486,18 @@ footer {
   .block_number {
     margin-right: 2%;
     width: 10rem;
+    display: flex;
+    align-items: center;
+  }
+
+  div.pvh_text_priority {
+    background-color: rgba(131, 207, 59);
+    width: 6rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
   }
 
   .slick-arrow {
@@ -504,13 +520,8 @@ footer {
     margin-right: 15rem;
   }
 
-  button.myBtn,
-  button.myBtn2,
-  button.myBtn3,
-  button.myBtn4,
-  button.myBtn5 {
-    width: 60px;
-    height: 60px;
+  div.pvh_text_priority {
+    font-size: 10px;
   }
 
   .number {
@@ -557,12 +568,7 @@ footer {
   }
 
   .prioritet_photo {
-    display: none;
-  }
-
-  img.button_left_img,
-  img.button_right_img {
-    width: 30%;
+    width: 20%;
   }
 
   .autoplay,
@@ -591,31 +597,16 @@ footer {
   }
 
   .pvh_text_mini {
-    width: 8rem;
-    height: 8rem;
-    border-color: rgb(78, 78, 78);
-    border-style: solid;
-    border-width: 0.1px;
+    width: 75%;
     text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
   }
   .button_centre {
     border-radius: 10%;
     font-size: 11px;
-    width: 12rem;
   }
 
   .button_block {
-    width: 80%;
-    display: flex;
-    position: fixed;
-    z-index: 90;
-    justify-content: space-around;
-    left: 10%;
-    right: 10%;
-    top: 90%;
+    width: 85%;
   }
 
   .myBtn2 {
@@ -639,17 +630,15 @@ footer {
     margin-bottom: 2rem;
   }
   .button_right_img_mini {
+    width: 50%;
     margin-bottom: 0rem;
     margin-left: 1rem;
   }
 
   .button_left_img_mini {
+    width: 50%;
     margin-bottom: 0rem;
     margin-left: 1rem;
-  }
-
-  .button_block_mini {
-    display: none;
   }
 
   .header_txt {
@@ -705,25 +694,13 @@ footer {
   cursor: pointer;
 }
 
-.myBtn4 {
-  margin-bottom: 1rem;
-}
-
 .myBtn,
 .myBtn2,
 .myBtn3,
 .myBtn4,
 .myBtn5 {
   border: none;
-  color: #f1f1f1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background-color: #94c941;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .modal-content {
@@ -765,7 +742,10 @@ footer {
   z-index: 100;
 }
 
-.external,
-.mainForm.user_formish {
+.external {
   z-index: 100;
+}
+
+.wrap-footer {
+  display: none;
 }
