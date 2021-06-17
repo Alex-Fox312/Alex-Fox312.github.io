@@ -846,3 +846,12 @@ footer {
   margin-right: auto;
   margin-top: 10%;
 }
+
+.form_name,
+.form_phone {
+  width: 90%;
+}
+
+.close {
+  color: #282829;
+}
