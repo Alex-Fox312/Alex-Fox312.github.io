@@ -340,81 +340,24 @@ footer {
   height: 5%;
 }
 
-/*bur-menu*/
-.burg {
-  display: none;
-  position: fixed;
-  padding: 3%;
-  z-index: 20;
+p.pvh_text {
+  width: 95%;
 }
-
-@media (max-width: 630px) {
-  .burg {
-    display: flex;
-  }
-}
-
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 20;
-  top: 0;
-  left: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover,
-.overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 630px) {
-  .overlay a {
-    font-size: 20px;
-  }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-
-/*end*/
 
 @media screen and (max-width: 1200px) {
+  .pvh_block {
+    padding-bottom: 6rem;
+  }
+
   html {
     width: 97%;
     font-size: 15px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  footer {
+    display: none;
   }
 
   .slider_img {
@@ -435,9 +378,16 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
+  .pvh_block {
+    padding-bottom: 6rem;
+  }
+
   html {
     width: auto;
     font-size: 13px;
+  }
+  footer {
+    display: none;
   }
 
   p.pvh_text {
@@ -457,15 +407,26 @@ footer {
 }
 
 @media screen and (max-width: 950px) {
+  .pvh_block {
+    padding-bottom: 6rem;
+  }
+
   html {
     width: 97%;
     margin-left: auto;
     margin-right: auto;
     font-size: 12px;
   }
+  footer {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  .pvh_block {
+    padding-bottom: 6rem;
+  }
+
   html {
     width: 100%;
     font-size: 10px;
@@ -473,7 +434,12 @@ footer {
     margin-right: auto;
   }
 
+  footer {
+    display: none;
+  }
+
   .header {
+    position: relative;
     width: 98%;
     margin-left: auto;
     margin-right: auto;
@@ -504,7 +470,14 @@ footer {
 }
 
 @media screen and (max-width: 630px) {
+  .pvh_block {
+    padding-bottom: 6rem;
+  }
   .menu {
+    display: none;
+  }
+
+  footer {
     display: none;
   }
 
@@ -514,6 +487,7 @@ footer {
   }
 
   header {
+    position: relative;
     display: flex;
     justify-content: space-around;
     margin-left: auto;
@@ -544,8 +518,16 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
+  .pvh_block {
+    padding-bottom: 6rem;
+  }
+
   .button_left {
     margin-right: 15rem;
+  }
+
+  footer {
+    display: none;
   }
 
   .block_3 {
@@ -556,6 +538,13 @@ footer {
     font-size: 12px;
   }
 
+  .prioritet .txt_1 {
+    margin-top: 0.5rem;
+  }
+
+  .arrow_left5 {
+    width: 0.1%;
+  }
   button.myBtn,
   button.myBtn2,
   button.myBtn3,
@@ -631,14 +620,15 @@ footer {
 
   p.pvh_text {
     font-weight: bold;
-    width: 99%;
+    width: 98%;
+    padding: 1%;
     font-size: 16px;
   }
 
   .slider_img {
     width: 15em;
-    padding: 0.7rem;
-    height: 11rem;
+    padding: 0.4rem;
+    height: 9rem;
   }
 
   .slick-arrow {
@@ -763,7 +753,6 @@ footer {
 .close5 {
   font-size: 48px;
   color: #282829;
-  margin-top: -7%;
   margin-left: 100%;
 }
 
