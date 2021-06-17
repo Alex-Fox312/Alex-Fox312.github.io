@@ -200,13 +200,6 @@ li .block_3_li {
   text-align: center;
 }
 
-.button_right_img:hover,
-.button_left_img:hover {
-  width: 4rem;
-  height: 4rem;
-  text-align: center;
-}
-
 .autoplay,
 .autoplay_2,
 .autoplay_3,
@@ -824,15 +817,22 @@ footer {
   overflow: hidden;
 }
 
-.close {
+.close,
+.close2,
+.close3,
+.close4,
+.close5 {
   margin-top: 15%;
   color: #f1f1f1;
   font-size: 5rem;
   margin-right: 10%;
-  z-index: 100;
+  z-index: 300000000;
 }
 
 .external,
 .mainForm.user_formish {
   z-index: 100;
+}
+.form {
+  width: 100%;
 }
