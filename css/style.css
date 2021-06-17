@@ -848,6 +848,9 @@ footer {
 ._Forms_generate {
   width: 30%;
   height: 60%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   background-color: #f1f1f1;
   display: block;
   margin-left: auto;
@@ -857,10 +860,14 @@ footer {
 
 .form_name,
 .form_phone {
-  width: 90%;
+  width: 80%;
   margin-left: 5%;
 }
 
 .close {
   color: #282829;
+}
+
+input.btn {
+  margin-bottom: 2rem;
 }
