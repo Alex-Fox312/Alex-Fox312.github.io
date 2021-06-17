@@ -850,6 +850,7 @@ footer {
 .form_name,
 .form_phone {
   width: 90%;
+  margin-left: 5%;
 }
 
 .close {
