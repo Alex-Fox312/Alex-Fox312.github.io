@@ -570,6 +570,8 @@ footer {
   }
 
   div.modal-content {
+    justify-content: center;
+    align-items: center;
     width: 40%;
     font-size: 16px;
     text-align: center;
@@ -730,6 +732,8 @@ footer {
   z-index: 100; /* Сидеть на вершине */
   left: 0;
   top: 0;
+  justify-content: center;
+  align-items: center;
   width: 100%; /* Полная ширина */
   height: 100%; /* Полная высота */
   overflow: auto; /* Включите прокрутку, если это необходимо */
@@ -739,6 +743,8 @@ footer {
 
 /* Модальное содержание/коробка */
 .modal-content {
+  justify-content: center;
+  align-items: center;
   background-color: #fefefe;
   margin: 15% auto; /* 15% сверху и по центру */
   padding: 20px;
@@ -787,6 +793,8 @@ footer {
 }
 
 .modal-content {
+  justify-content: center;
+  align-items: center;
   width: 20%;
   display: flex;
   justify-content: center;
