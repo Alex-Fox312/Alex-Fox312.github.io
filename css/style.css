@@ -585,22 +585,36 @@ p.pvh_text {
   .prioritet-block {
     display: flex;
     text-align: center;
-    justify-content: center;
     flex-direction: column;
+  }
+
+  .prioritet {
+    text-align: center;
   }
 
   .prioritet-block_left,
   .prioritet-block_right {
     display: flex;
-    justify-content: center;
+    width: 90%;
+    font-size: 12px;
+    justify-content: space-around;
     align-items: center;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
     margin-right: auto;
     margin-left: auto;
-    padding: 0.2rem;
+    list-style: none;
+  }
+
+  .punkt li {
+    padding: 1%;
+    margin-top: -5%;
+    width: 98%;
+    display: inline;
   }
 
   .prioritet_photo {
-    display: none;
+    width: 15%;
   }
 
   img.button_left_img,
@@ -687,7 +701,8 @@ p.pvh_text {
   }
 
   .punkt {
-    display: inline-flex;
+    display: flex;
+    float: right;
     margin-bottom: 2rem;
   }
   .button_right_img_mini {
@@ -822,6 +837,7 @@ p.pvh_text {
   z-index: 100;
 }
 .form {
+  justify-content: center;
   width: 100%;
 }
 
@@ -837,6 +853,7 @@ p.pvh_text {
 .form_phone {
   width: 80%;
   margin-left: 5%;
+  justify-content: center;
 }
 
 .modal-content p {
