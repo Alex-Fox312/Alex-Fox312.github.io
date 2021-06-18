@@ -1,6 +1,6 @@
 @font-face {
   font-family: benne;
-  src: url(/ViaodaLibre-Regular.ttf);
+  src: url(/Vollkorn-VariableFont_wght.ttf);
 }
 
 html {
@@ -558,11 +558,16 @@ p.pvh_text {
 
   .info.txt_2,
   .info.txt_1 {
-    font-size: 32px;
+    text-align: center;
+    width: 95%;
+    margin-left: 2%;
+    line-height: 3.5rem;
+    font-size: 36px;
   }
 
   .info.txt_2 {
     margin-top: -2rem;
+    font-size: 28px;
     padding-bottom: 0.7rem;
   }
 
