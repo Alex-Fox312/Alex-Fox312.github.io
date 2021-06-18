@@ -300,9 +300,9 @@ li .block_3_li {
 }
 
 p.pvh_text {
-  width: 99%;
+  width: 98%;
   height: 5rem;
-  font-size: 21px;
+  font-size: 19px;
   align-items: center;
   display: flex;
   margin-left: auto;
@@ -392,7 +392,7 @@ p.pvh_text {
 
   p.pvh_text {
     font-weight: bold;
-    width: 99%;
+    width: 95%;
     font-size: 22px;
   }
 
@@ -448,7 +448,7 @@ p.pvh_text {
 
   p.pvh_text {
     font-weight: bold;
-    width: 99%;
+    width: 95%;
     font-size: 21px;
   }
 
@@ -520,6 +520,15 @@ p.pvh_text {
 @media screen and (max-width: 550px) {
   .pvh_block {
     padding-bottom: 6rem;
+  }
+
+  .info.txt_2,
+  .info.txt_1 {
+    font-size: 28px;
+  }
+
+  .info.txt_2 {
+    margin-top: -2rem;
   }
 
   .button_left {
@@ -610,7 +619,7 @@ p.pvh_text {
     padding: 1%;
     margin-top: -5%;
     width: 98%;
-    display: inline;
+    display: block;
   }
 
   .prioritet_photo {
@@ -634,9 +643,9 @@ p.pvh_text {
 
   p.pvh_text {
     font-weight: bold;
-    width: 98%;
+    width: 95%;
     padding: 1%;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .slider_img {
@@ -700,8 +709,13 @@ p.pvh_text {
     font-size: 12px;
   }
 
-  .punkt {
+  .punkt_div {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .punkt {
+    display: block;
     float: right;
     margin-bottom: 2rem;
   }
