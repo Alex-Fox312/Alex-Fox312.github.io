@@ -130,6 +130,7 @@ li .block_3_li {
 
 .info.block_3_li {
   font-size: 21px;
+  width: 50%;
   margin-top: -2rem;
 }
 
@@ -178,12 +179,13 @@ p .dot {
 .info.block_3 {
   height: 5rem;
   width: 90%;
-  line-height: 1rem;
+  line-height: 1.3rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  margin-top: 1.5rem;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .button_block {
@@ -555,11 +557,12 @@ p.pvh_text {
 
   .info.txt_2,
   .info.txt_1 {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .info.txt_2 {
     margin-top: -2rem;
+    padding-bottom: 0.7rem;
   }
 
   .button_left {
@@ -742,6 +745,7 @@ p.pvh_text {
   }
 
   .block_3_li {
+    width: 50%;
     font-size: 12px;
   }
 
