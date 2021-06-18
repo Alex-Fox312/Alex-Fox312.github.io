@@ -150,7 +150,7 @@ li .block_3_li {
 
 .info.block_3 {
   height: 5rem;
-  width: 65%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -705,8 +705,9 @@ p.pvh_text {
     margin-top: -2rem;
   }
 
-  .block_3_li li {
+  .block_3_li {
     font-size: 12px;
+    width: 45%;
   }
 
   .punkt_div {
