@@ -350,7 +350,6 @@ p .dot {
   align-items: center;
   display: flex;
   justify-content: center;
-  background-color: rgba(131, 207, 59);
 }
 
 p.pvh_text {
@@ -555,12 +554,14 @@ p.pvh_text {
     margin-left: 2%;
   }
   .block_number {
+    margin-top: 0.7rem;
+    line-height: 1.3rem;
     margin-right: 2%;
     width: 10rem;
   }
 
   .slick-arrow {
-    width: 0px;
+    display: none;
   }
 
   .button_centre {
@@ -577,6 +578,17 @@ p.pvh_text {
 @media screen and (max-width: 550px) {
   .pvh_block {
     padding-bottom: 6rem;
+  }
+
+  .slider {
+    padding-top: 10rem;
+    position: relative;
+    display: block;
+    align-items: flex-end;
+  }
+
+  .arrow_block {
+    display: none;
   }
 
   .info.txt_2,
@@ -628,7 +640,7 @@ p.pvh_text {
   }
 
   .number {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   div.modal-content {
@@ -684,14 +696,14 @@ p.pvh_text {
   }
 
   .punkt li {
-    padding: 1%;
+    padding: 0.1rem;
     margin-top: -5%;
     width: 98%;
     display: block;
   }
 
   .prioritet_photo {
-    width: 15%;
+    width: 20%;
   }
 
   img.button_left_img,
@@ -724,12 +736,13 @@ p.pvh_text {
   }
 
   .slick-arrow {
-    width: 0px;
+    display: none;
   }
 
   .pvh_text_mini {
     font-weight: bold;
-    width: 8rem;
+    width: 9rem;
+    padding: 1rem;
     height: 8rem;
     border-color: rgb(78, 78, 78);
     border-style: solid;
@@ -741,7 +754,7 @@ p.pvh_text {
   }
   .button_centre {
     font-size: 14px;
-    width: 100%;
+    width: 70%;
     height: 5rem;
     background-size: 57%;
   }
@@ -786,7 +799,7 @@ p.pvh_text {
 
   .txt_1 {
     font-size: 32px;
-    margin-top: -2rem;
+    margin-top: -3rem;
   }
 
   .block_3_li {
@@ -819,7 +832,7 @@ p.pvh_text {
   }
 
   .header_txt {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .block_3_li p {
@@ -827,6 +840,8 @@ p.pvh_text {
     width: 95%;
     justify-content: space-between;
   }
+
+
 }
 
 /*-------------------------------*/
