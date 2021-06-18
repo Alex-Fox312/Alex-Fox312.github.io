@@ -50,6 +50,7 @@ header {
   color: white;
   background-image: url(/img/intro-accent.svg);
   background-size: 100%;
+  background-repeat: no-repeat;
   width: 10rem;
   height: 2rem;
   text-align: center;
@@ -766,6 +767,7 @@ p.pvh_text {
   .header_txt {
     background-image: url(/img/intro-accent.svg);
     color: white;
+    background-repeat: no-repeat;
     border-radius: 0rem;
     width: 12rem;
   }
