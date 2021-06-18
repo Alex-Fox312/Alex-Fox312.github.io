@@ -1,972 +1,419 @@
-@font-face {
-  font-family: benne;
-  src: url(/Vollkorn-VariableFont_wght.ttf);
-}
-
-html {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: bold;
-  color: #282829;
-  font-family: benne;
-  font-weight: bold;
-}
-
-body {
-  padding-top: 5rem;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: benne;
-  font-weight: bold;
-}
-
-a {
-  color: #282829;
-  text-decoration: none;
-}
-
-a:hover {
-  color: rgb(110, 110, 110);
-}
-
-header {
-  font-family: benne;
-  font-size: 18px;
-  font-weight: bold;
-  position: fixed;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 98%;
-  height: 5rem;
-  margin-top: -5.5rem;
-  background-color: rgba(207, 207, 205, 0.795);
-  box-shadow: 0.5rem 0.5rem 0 0 rgb(255, 208, 0);
-  z-index: 10;
-}
-
-.header_txt {
-  color: white;
-  background-image: url(/img/intro-accent.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 10rem;
-  height: 2rem;
-  text-align: center;
-  padding-top: 0.5rem;
-  border-radius: 0.5rem;
-}
-
-.number {
-  padding-top: 0.2rem;
-}
-
-.blcok_chat {
-  background-color: rgba(255, 208, 0, 0.932);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: black;
-  align-items: center;
-}
-
-.block_number {
-  background-color: rgba(255, 208, 0, 0.932);
-  border-radius: 0.5rem;
-  width: 10rem;
-  height: 3.5rem;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: black;
-  align-items: center;
-}
-.menu {
-  list-style-type: none;
-  padding-top: 1rem;
-  display: flex;
-  justify-content: space-around;
-  width: 50rem;
-  align-items: center;
-  text-align: center;
-}
-
-.txt_1 {
-  font-size: 48px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.txt_2 {
-  font-size: 28px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.text_block_3 {
-  align-items: center;
-  width: 50%;
-  padding: 1%;
-  height: 25%;
-}
-
-.block_3 {
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  height: 2rem;
-  padding: 1rem;
-}
-
-li .block_3_li {
-  display: flex;
-  margin-top: -2rem;
-  list-style-type: none;
-  width: 100%;
-  font-size: 21px;
-  left: auto;
-  right: auto;
-}
-
-.info.block_3_li {
-  font-size: 21px;
-  width: 50%;
-  margin-top: -2rem;
-}
-
-p .dot {
-  color: #00a119;
-  font-size: 3.5rem;
-  margin-top: 30rem;
-}
-
-.dot_block {
-  color: #00a119;
-  font-size: 26px;
-  width: 100%;
-  margin-bottom: -2rem;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-}
-
-.text_block_3 {
-  color: #000;
-}
-
-.marg {
-  text-indent: 0.8rem;
-  margin-top: -1rem;
-}
-
-.info {
-  margin-bottom: 1.5rem;
-  margin-top: -0.5rem;
-  left: auto;
-  font-weight: bold;
-  right: auto;
-  justify-content: space-around;
-}
-
-.info li {
-  padding-left: 5%;
-  padding-right: 5%;
-  width: 100%;
-  font-size: 21px;
-  padding: 0.2rem;
-  color: #282829;
-}
-
-.info.block_3 {
-  height: 5rem;
-  width: 90%;
-  line-height: 1.3rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  margin-top: 1.5rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.button_block {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 80%;
-  margin-left: 10%;
-}
-
-.button_centre {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 24px;
-  padding: 1rem;
-  font-weight: bold;
-  font-family: benne;
-  background-image: url(/img/intro-btn.png);
-  background-size: 100%;
-  text-shadow: 0 1px 0 hsl(0deg 0% 100% / 45%);
-  background-position: center;
-  background-color: rgba(255, 255, 255, 0);
-  background-repeat: no-repeat;
-  border-style: none;
-  border-bottom: 1px solid #5eabc3;
-  border-radius: 30%;
-  border-width: 0rem;
-}
-
-.button_centre:root {
-  --mm-line-height: 20px;
-  --mm-listitem-size: 44px;
-  --mm-navbar-size: 44px;
-  --mm-offset-top: 0;
-  --mm-offset-right: 0;
-  --mm-offset-bottom: 0;
-  --mm-offset-left: 0;
-  --mm-color-border: rgba(0, 0, 0, 0.1);
-  --mm-color-button: rgba(0, 0, 0, 0.3);
-  --mm-color-text: rgba(0, 0, 0, 0.75);
-  --mm-color-text-dimmed: rgba(0, 0, 0, 0.3);
-  --mm-color-background: #f3f3f3;
-  --mm-color-background-highlight: rgba(0, 0, 0, 0.05);
-  --mm-color-background-emphasis: rgba(255, 255, 255, 0.4);
-  --mm-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.button_left {
-  position: absolute;
-  margin-right: 40rem;
-  margin-top: 2rem;
-  justify-content: center;
-  text-align: center;
-}
-
-.button_right {
-  position: absolute;
-  margin-left: 40rem;
-  margin-top: 2rem;
-  justify-content: center;
-  text-align: center;
-}
-
-.autoplay,
-.autoplay_2,
-.autoplay_3,
-.autoplay_4,
-.autoplay_5 {
-  display: flex;
-  width: 90%;
-  margin-left: 5%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  z-index: 1;
-  margin-top: -11rem;
-}
-
-.slider {
-  justify-content: center;
-
-  flex-direction: column;
-  align-content: center;
-}
-
-.slider_block {
-  justify-content: center;
-  text-align: center;
-  margin: 5rem;
-}
-
-.slider_img {
-  align-items: center;
-  justify-content: center;
-  width: 22em;
-  padding: 0.7rem;
-  height: 18rem;
-  border-radius: 5%;
-}
-
-.prioritet-block_left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: -2rem;
-  margin-left: 3rem;
-}
-
-.prioritet-block_right {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: -2rem;
-  margin-right: 3rem;
-}
-
-.prioritet_photo {
-  width: 10rem;
-}
-
-.prioritet {
-  width: 80%;
-}
-
-.arrow_block {
-  display: flex;
-  justify-content: space-between;
-  width: 96%;
-  margin-left: 2%;
-  margin-top: 11rem;
-  z-index: 2;
-  opacity: inherit;
-}
-
-.arrow_block:hover {
-  opacity: 50%;
-}
-
-.pvh_block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2rem;
-}
-
-.pvh_text_mini {
-  font-weight: bold;
-  width: 15rem;
-  height: 10rem;
-  border-color: rgb(78, 78, 78);
-  border-style: solid;
-  border-width: 0.1px;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  background-color: rgba(131, 207, 59);
-}
-
-p.pvh_text {
-  width: 98%;
-  height: 2.6rem;
-  font-size: 19px;
-  align-items: center;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  background-color: rgba(131, 207, 59);
-  font-weight: bold;
-}
-
-footer {
-  background-color: rgba(207, 207, 205, 0.795);
-  box-shadow: 0.5rem 0.5rem 0 0 rgba(255, 208, 0, 0.932);
-  width: 100%;
-  height: 5rem;
-  margin-bottom: 1rem;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.myBtn5 {
-  margin-bottom: 2rem;
-}
-
-.button_block_mini {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  z-index: 10;
-  margin-top: 8%;
-  margin-left: 1rem;
-  align-items: flex-end;
-  width: 98%;
-  justify-content: flex-end;
-  height: 5%;
-}
-
-p.pvh_text {
-  width: 95%;
-  height: 2.6rem;
-}
-
-@media screen and (max-width: 1200px) {
-  .pvh_block {
-    padding-bottom: 6rem;
-  }
-
-  html {
-    width: 97%;
-    font-size: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  footer {
-    display: none;
-  }
-
-  .slider_img {
-    width: 18em;
-    padding: 0.4rem;
-    height: 15rem;
-  }
-
-  .autoplay,
-  .autoplay_2,
-  .autoplay_3,
-  .autoplay_4,
-  .autoplay_5 {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .pvh_block {
-    padding-bottom: 6rem;
-  }
-
-  html {
-    width: auto;
-    font-size: 13px;
-  }
-  footer {
-    display: none;
-  }
-
-  p.pvh_text {
-    font-weight: bold;
-    width: 90%;
-    font-size: 22px;
-    height: 2.6rem;
-  }
-
-  .button_left_img {
-    width: 27px;
-    height: 28px;
-  }
-  .button_right_img {
-    width: 27px;
-    height: 28px;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .pvh_block {
-    padding-bottom: 6rem;
-  }
-
-  html {
-    width: 97%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 12px;
-  }
-  footer {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .pvh_block {
-    padding-bottom: 6rem;
-  }
-
-  html {
-    width: 100%;
-    font-size: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  footer {
-    display: none;
-  }
-
-  .header {
-    position: relative;
-    width: 98%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 10px;
-  }
-
-  p.pvh_text {
-    font-weight: bold;
-    height: 2.6rem;
-    width: 90%;
-    font-size: 21px;
-  }
-
-  .txt_1 {
-    font-size: 36px;
-  }
-
-  .txt_2 {
-    font-size: 16px;
-  }
-
-  .button_left {
-    margin-right: 45rem;
-  }
-
-  .button_right {
-    margin-left: 45rem;
-  }
-}
-
-@media screen and (max-width: 630px) {
-  .pvh_block {
-    padding-bottom: 6rem;
-  }
-  .menu {
-    display: none;
-  }
-
-  footer {
-    display: none;
-  }
-
-  html {
-    width: auto;
-    font-size: 11px;
-  }
-
-  header {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .header_txt {
-    margin-left: 2%;
-  }
-  .block_number {
-    margin-right: 2%;
-    width: 10rem;
-  }
-
-  .slick-arrow {
-    width: 0px;
-  }
-
-  .button_centre {
-    font-size: 16px;
-  }
-
-  .button_block {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .pvh_block {
-    padding-bottom: 6rem;
-  }
-
-  .info.txt_2,
-  .info.txt_1 {
-    text-align: center;
-    width: 95%;
-    margin-left: 2%;
-    line-height: 3.5rem;
-    font-size: 36px;
-  }
-
-  .info.txt_2 {
-    margin-top: -2rem;
-    font-size: 28px;
-    padding-bottom: 0.7rem;
-    text-align: center;
-  }
-
-  .button_left {
-    margin-right: 15rem;
-  }
-
-  footer {
-    display: none;
-  }
-
-  .block_3 {
-    margin-bottom: -2rem;
-  }
-
-  .block_3 p {
-    font-size: 17px;
-  }
-
-  .prioritet .txt_1 {
-    margin-top: 0.5rem;
-  }
-
-  .arrow_left5 {
-    width: 0.1%;
-  }
-  button.myBtn,
-  button.myBtn2,
-  button.myBtn3,
-  button.myBtn4,
-  button.myBtn5 {
-    width: 60px;
-    height: 60px;
-  }
-
-  .number {
-    font-size: 12px;
-  }
-
-  div.modal-content {
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    font-size: 16px;
-    text-align: center;
-  }
-  div.chat {
-    margin-top: 40%;
-    height: 20%;
-  }
-
-  .telegram,
-  .viber {
-    width: 40%;
-  }
-
-  html {
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .button_right {
-    display: none;
-  }
-
-  .prioritet-block {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .prioritet {
-    text-align: center;
-  }
-
-  .prioritet-block_left,
-  .prioritet-block_right {
-    display: flex;
-    width: 90%;
-    font-size: 12px;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-    margin-right: auto;
-    margin-left: auto;
-    list-style: none;
-  }
-
-  .punkt li {
-    padding: 1%;
-    margin-top: -5%;
-    width: 98%;
-    display: block;
-  }
-
-  .prioritet_photo {
-    width: 15%;
-  }
-
-  img.button_left_img,
-  img.button_right_img {
-    width: 30%;
-  }
-
-  .autoplay,
-  .autoplay_2,
-  .autoplay_3,
-  .autoplay_4,
-  .autoplay_5 {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  p.pvh_text {
-    font-weight: bold;
-    height: 2.6rem;
-    width: 90%;
-    padding: 1%;
-    font-size: 14px;
-  }
-
-  .slider_img {
-    width: 15em;
-    padding: 0.4rem;
-    height: 9rem;
-  }
-
-  .slick-arrow {
-    width: 0px;
-  }
-
-  .pvh_text_mini {
-    font-weight: bold;
-    width: 8rem;
-    height: 8rem;
-    border-color: rgb(78, 78, 78);
-    border-style: solid;
-    border-width: 0.1px;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-  .button_centre {
-    font-size: 14px;
-    width: 70%;
-    height: 5rem;
-    background-size: 57%;
-  }
-
-  .button_block {
-    width: 95%;
-    display: flex;
-    position: fixed;
-    z-index: 90;
-    justify-content: space-around;
-    left: 2.5%;
-    top: 90%;
-  }
-
-  header {
-    background-color: rgba(134, 134, 123, 0);
-    box-shadow: none;
-  }
-  .block_number {
-    background-color: rgba(255, 250, 240, 0);
-  }
-
-  .header_txt {
-    background-image: url(/img/intro-accent.svg);
-    color: white;
-    background-repeat: no-repeat;
-    border-radius: 0rem;
-    width: 12rem;
-  }
-
-  .myBtn2 {
-    margin-left: -5rem;
-  }
-
-  .myBtn3 {
-    margin-right: -5rem;
-  }
-
-  .txt_2 {
-    font-size: 12px;
-  }
-
-  .txt_1 {
-    font-size: 32px;
-    margin-top: -2rem;
-  }
-
-  .block_3_li {
-    width: 50%;
-    font-size: 12px;
-  }
-
-  .punkt_div {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .punkt {
-    display: block;
-    float: right;
-    margin-bottom: 2rem;
-  }
-  .button_right_img_mini {
-    margin-bottom: 0rem;
-    margin-left: 1rem;
-  }
-
-  .button_left_img_mini {
-    margin-bottom: 0rem;
-    margin-left: 1rem;
-  }
-
-  .button_block_mini {
-    display: none;
-  }
-
-  .header_txt {
-    font-size: 12px;
-  }
-
-  .block_3_li p {
-    font-size: 17px;
-    width: 95%;
-    justify-content: space-between;
-  }
-}
-
-/*-------------------------------*/
-
-/* Модальный (фон) */
-.modal,
-.modal2,
-.modal3,
-.modal4,
-.modal5 {
-  display: none; /* Скрыто по умолчанию */
-  position: fixed; /* Оставаться на месте */
-  z-index: 100; /* Сидеть на вершине */
-  left: 0;
-  top: 0;
-  justify-content: center;
-  align-items: center;
-  width: 100%; /* Полная ширина */
-  height: 100%; /* Полная высота */
-  overflow: auto; /* Включите прокрутку, если это необходимо */
-  background-color: rgb(0, 0, 0); /* Цвет запасной вариант */
-  background-color: rgba(0, 0, 0, 0.4); /* Черный с непрозрачностью */
-}
-
-/* Модальное содержание/коробка */
-.modal-content {
-  justify-content: center;
-  align-items: center;
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% сверху и по центру */
-  padding: 20px;
-  width: 30%;
-  height: 60%;
-  text-align: center;
-  border: 1px solid #888;
-  width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
-}
-
-/* Кнопка закрытия */
-.close,
-.close2,
-.close3,
-.close4,
-.close5 {
-  font-size: 48px;
-  color: #282829;
-  margin-left: 100%;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.myBtn4 {
-  margin-bottom: 1rem;
-}
-
-.myBtn,
-.myBtn2,
-.myBtn3,
-.myBtn4,
-.myBtn5 {
-  border: none;
-  color: #f1f1f1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background-color: #00a119;
-}
-
-.modal-content {
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 5%;
-  font-size: 24px;
-  font-style: bold;
-  background-color: rgb(255, 255, 255);
-}
-
-.form {
-  height: 30rem;
-  border: none;
-  width: 20rem;
-  align-items: center;
-  justify-content: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 14rem;
-  z-index: 50;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  overflow: hidden;
-}
-
-.external,
-.mainForm.user_formish {
-  z-index: 100;
-}
-.form {
-  justify-content: center;
-  width: 100%;
-}
-
-._Forms_generate {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.form_name,
-.form_phone {
-  width: 80%;
-  margin-left: 5%;
-  justify-content: center;
-}
-
-.modal-content p {
-  margin-top: -5%;
-  font-size: 19px;
-  width: 100%;
-}
-
-input.btn {
-  margin-bottom: 2rem;
-}
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="qform-verification" content="H85QZZE2F2AQ"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <title>Document</title>
+  </head>
+  
+  <header>
+    <script type='text/javascript'>
+      (function() {
+        function init() {var scr = document.createElement('script'); scr.type = 'text/javascript'; scr.defer = 'defer'; scr.src = '//cdn.qform24.com/forms.js?v=' + parseInt(new Date().getTime()/1000); var scrInsert = document.getElementsByTagName('script')[0]; scrInsert.parentNode.insertBefore(scr, scrInsert); }
+        var d = document; var w = window;
+        if (d.readyState == 'complete') {init(); } else {if (w.attachEvent) {w.attachEvent('onload', init); } else {w.addEventListener('load', init, false); } } })();
+
+    </script>
+
+
+    <div class="header_txt">Гарантия 10 лет</div>
+    <nav class="menu">
+      <a href="#up"><li>Главная</li></a>
+      <a href="#excellence"><li>Наши приемущества</li></a>
+      <a href="#job"><li>Наши работы</li></a>
+      <a href="#pvh"><li>
+        Почему
+        <br />
+        ПВХ мембрана
+      </li></a>
+    </nav>
+    <div class="block_number">
+      <a class="number" href="tel:+380 67 379 50 56">+380 673795056</a>
+      <a class="number" href="tel:+380 97 615 12 65">+380 976151265</a>
+    </div>
+
+
+
+     </header>
+
+  <a name="up"></a>
+  <br>
+  <br>
+  <body>
+ 
+    <container class="info">
+      <p class="info txt_1">МОНТАЖ И РЕМОНТ ПЛОСКОЙ КРОВЛИ</p>
+      <p class="info txt_2">В ТОЧНЫЕ СРОКИ ПО ДОСТУПНОЙ ЦЕНЕ</p>
+      <div class="info block_3">
+               <div class="info block_3_li">
+                   <div  class="dot_block">
+                    <em class="dot">•</em>
+          <p class="text_block_3"> 	
+             бесплатный выезд на объект
+            </p></div>
+            <div  class="dot_block">
+              <em class="dot">•</em>
+         <p class="text_block_3">
+            без предоплат
+          </p>
+            </div>
+</div>
+
+<div class="info block_3_li">
+  <div  class="dot_block">
+  <em class="dot">•</em>
+            <p class="text_block_3"> приступаем к работе в течение 2 рабочих дней
+              </p>
+</div>
+
+              <div class="dot_block">
+              <em class="dot">•</em>
+              <p class="text_block_3">
+             опыт более 12 лет
+          </p>
+        </div>
+      </div>
+      </div>
+    </container>
+    
+<container class="button_block">
+        
+<button id="myBtn3" class="myBtn3">
+    <p>ЧАТ</p>
+  </button> 
+<div id="myModal3" class="modal3">
+
+  <div class="modal-content chat">
+    <span class="close3">&times;</span>
+    <p>Напишите нам</p>
+    <div>
+    <a href="viber://add?number=380976151265">
+      <img class="viber" src="/img/viber_icon_130796.png" alt="">
+    </a>
+    <a href="https://telegram.im/@Ukrgidroizol">
+      <img class="telegram" src="/img/telegram_icon-icons.com_72055.png" alt="">
+    </a>
+  </div>
+
+  </div>
+</div>
+
+
+<button id="myBtn"class="button_centre">Получить просчёт
+  <br> за 30 мин</button>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+  <p>ОСТАВТЕ ЗАЯВКУ <br>
+    И МЫ С ВАМИ СВЯЖИМСЯ</p>
+  <div id="sQiszGSA" data-formid="N61623951976n9n" class="_Forms_generate">
+
+  </div>
+</div>
+</div>
+</div>
+
+
+<button id="myBtn2" class="myBtn2">
+  <p>ЗВОНОК</p>
+</button>
+<div id="myModal2" class="modal2">
+  <div class="modal-content">
+    <span class="close2">&times;</span>
+  <p>ОСТАВТЕ ЗАЯВКУ <br>
+    И МЫ С ВАМИ СВЯЖИМСЯ</p>
+  <div id="ESbyZGtA" data-formid="bT1623958289ZHN" class="_Forms_generate"> </div>
+</div>
+</div>
+</div>
+</container>
+
+<container class="button_block_mini ">
+
+      <div class="button_left_mini ">
+      <button id="myBtn4" class="myBtn4">
+        <img class="button_left_img" src="/img/whatsapp.svg" alt="chat" />
+        <p>ЧАТ</p>
+      </button> 
+      <div id="myModal4" class="modal4">
+
+        <div class="modal-content chat">
+          <span class="close4">&times;</span>
+          <p><p> Напишите нам </p>
+          <div>         
+            <a href="viber://add?number=380976151265">
+            <img class="viber" src="/img/viber_icon_130796.png" alt="">
+          </a>
+          <a  href="https://telegram.im/@Ukrgidroizol">
+            <img class="telegram" src="/img/telegram_icon-icons.com_72055.png" alt="">
+          </a>
+        </div>
+        </p>
+        </div>
+      </div>
+      </div>
+
+      <div class="button_right_mini " >
+      <button id="myBtn5" class="myBtn5">
+            <img class="button_right_img" src="/img/phone-icon.png" alt="call" />
+            <p>ЗВОНОК</p>
+          </button>
+          <div id="myModal5" class="modal5">
+            <div class="modal-content">
+              <span class="close5">&times;</span>
+            <p>ОСТАВТЕ ЗАЯВКУ <br>
+              И МЫ С ВАМИ СВЯЖИМСЯ</p>
+            <div id="frQ6fGD6" data-formid="5G1623959173EBt" class="_Forms_generate"></div>
+          </div>
+        </div>
+</div>
+  </container> 
+
+  <container class="slider_block">
+      <p class="pvh_text">КРОВЛЯ НА КОТТЕДЖАХ, ЧАСТНЫХ ДОМАХ.</p>
+      <div class="slider">
+        <div class="arrow_block">
+          <img class="arrow_left" src="/img/back_arrow.png" alt="" />
+          <img class="arrow_right" src="/img/for_arrow.png" alt="" />
+        </div>
+        <div class="autoplay">
+          <img class="slider_img" src="/img/cotag/1.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/11.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/12.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/14.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/2.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/23.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/3.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/34.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/5.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/6.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/IMG_3307.JPG" alt="" />
+        </div>
+      </div>
+      <p class="pvh_text">КРОВЛЯ НА ЗАВОДАХ, ЛОГИСТИЧЕСКИХ ЦЕНТРАХ, ПРОМЫШЛЕНЫХ ПОМЕЩЕНИЯХ. </p>
+      <div class="slider">
+        <div class="arrow_block">
+          <img class="arrow_left2" src="/img/back_arrow.png" alt="" />
+          <img class="arrow_right2" src="/img/for_arrow.png" alt="" />
+        </div>
+        <div class="autoplay_2">
+          <img class="slider_img" src="/img/industrial/1.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/16.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/2.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/24 — копия.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/25 — копия.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/3.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/4.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/5.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/555.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/6.png" alt="" />
+          <img class="slider_img" src="/img/industrial/7.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/8.jpg" alt="" />
+        </div>
+      </div>
+      <p class="pvh_text">ЭКСПЛУАТИРУЕМЫЕ ТЕРРАСЫ, БАЛКОНЫ.</p>
+      <div class="slider">
+        <div class="arrow_block">
+          <img class="arrow_left3" src="/img/back_arrow.png" alt="" />
+          <img class="arrow_right3" src="/img/for_arrow.png" alt="" />
+        </div>
+        <div class="autoplay_3">
+          <img class="slider_img" src="/img/terrace/1.jpg" alt="" />
+          <img class="slider_img" src="/img/terrace/1_1.jpg" alt="" />
+          <img class="slider_img" src="/img/terrace/3.jpeg" alt="" />
+          <img class="slider_img" src="/img/terrace/4.jpg" alt="" />
+          <img class="slider_img" src="/img/terrace/5.JPG" alt="" />
+          <img class="slider_img" src="/img/terrace/6.jpg" alt="" />
+          <img class="slider_img" src="/img/terrace/6_1.jpg" alt="" />
+        </div>
+      </div>
+      <p class="pvh_text">ГИДРОИЗОЛЯЦИЯ ПОДВАЛОВ, ФУНДАМЕНТА, РЕЗЕРВУАРОВ.</p>
+      <div class="slider">
+        <div class="arrow_block">
+          <img class="arrow_left4" src="/img/back_arrow.png" alt="" />
+          <img class="arrow_right4" src="/img/for_arrow.png" alt="" />
+        </div>
+        <a name="excellence"></a>
+        <div class="autoplay_4">
+          <img class="slider_img" src="/img/basement/1.jpg" alt="" />
+          <img class="slider_img" src="/img/basement/11.jpg" alt="" />
+          <img class="slider_img" src="/img/basement/2.jpg" alt="" />
+          <img class="slider_img" src="/img/basement/3.jpeg" alt="" />
+          <img class="slider_img" src="/img/basement/3.jpg" alt="" />
+          <img class="slider_img" src="/img/basement/5.jpeg" alt="" />
+          <img class="slider_img" src="/img/basement/6.jpg" alt="" />
+          <img class="slider_img" src="/img/basement/7.jpg" alt="" />
+          <img class="slider_img" src="/img/basement/7_1.jpg" alt="" />
+          <img class="slider_img" src="/img/basement/9.jpeg" alt="" />
+          <img class="slider_img" src="/img/basement/9.jpg" alt="" />
+          <img class="slider_img" src="/img/basement/a_1854_35.jpg" alt="" />
+        </div>
+      </div>
+    </container>
+
+    <container class="prioritet">
+      <div>
+        <p class="txt_1">ПРИЕМУЩЕСТВА НАШЕЙ КОМПАНИИ</p>
+        <div class="prioritet-block_left">
+          <img
+            class="prioritet_photo"
+            src="/img/advantages/construction-equipment-and-machinery-with-trucks-crane-and-bulldozer_1284-6270.jpg"
+            alt=""
+          />
+          <p class="txt_2">СОБСТВЕННЫЙ АВТОПАРК</p>
+        </div>
+        <div class="prioritet-block_right">
+          <p class="txt_2">
+            ПРОФЕССИОНАЛЬНОЕ ШВЕЙЦАРСОЕ <br />
+            ОБОРУДОВАНИЕ
+          </p>
+          <img
+            class="prioritet_photo"
+            src="/img/advantages/apparat_yniversa_2.jpg"
+            alt=""
+          />
+          <img
+            class="prioritet_photo"
+            src="/img/advantages/1093247126_w640_h640_svarochnyj-apparat-avtomat.jpg"
+            alt=""
+          />
+        </div>
+        <div class="prioritet-block_left">
+
+            <img
+              class="prioritet_photo"
+              src="/img/advantages/technician-builders-engineers-and-mechanics_9026-3.jpg"
+              alt=""
+            />
+            <div>
+            <p class="txt_2">В ШТАТЕ ТОЛЬКО ПРОФЕССИОНАЛЫ</p>
+            <div class="punkt_div">
+            <div class="punkt">
+              <li>проектировщики</li>
+              <li>инженеры</li>
+            </div>
+              <div class="punkt">
+              <li>прорабы</li>
+              <li>кровельщики</li>
+            </div>
+            </div>
+          </div>
+          <div class="prioritet-block_li">
+          </div>
+        </div>
+        <div class="prioritet-block_right">
+          <p class="txt_2">
+            ТОЧНОЕ СОБЛЮДЕНИЕ СРОКОВ<br />
+            И СУММЫ ПО СМЕТЕ
+          </p>    <a name="job"></a>
+          <img
+            class="prioritet_photo"
+            src="/img/advantages/pngtree-contract-sign-icon-design-template-vector-isolated-png-image_856386.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </container>
+
+    <p class="pvh_text">ГАЛЕРЕЯ РАБОТ</p>
+    <div>
+      <div class="slider">
+        <div class="arrow_block">
+          <img class="arrow_left5" src="/img/back_arrow.png" alt="" />
+          <img class="arrow_right5" src="/img/for_arrow.png" alt="" />
+        </div>
+        <div class="autoplay_5">
+          <img class="slider_img" src="/img/basement/1.jpg" alt="" />
+          <img class="slider_img" src="/img/basement/11.jpg" alt="" />
+          <img class="slider_img" src="/img/basement/2.jpg" alt="" />
+          <img class="slider_img" src="/img/basement/3.jpeg" alt="" />
+          <img class="slider_img" src="/img/basement/3.jpg" alt="" />
+          <img class="slider_img" src="/img/basement/5.jpeg" alt="" />
+          <img class="slider_img" src="/img/basement/6.jpg" alt="" />
+          <img class="slider_img" src="/img/basement/7.jpg" alt="" />
+          <img class="slider_img" src="/img/basement/7_1.jpg" alt="" />
+          <img class="slider_img" src="/img/basement/9.jpeg" alt="" />
+          <img class="slider_img" src="/img/basement/9.jpg" alt="" />
+          <img class="slider_img" src="/img/basement/a_1854_35.jpg" alt="" />
+          <img class="slider_img" src="/img/terrace/1.jpg" alt="" />
+          <img class="slider_img" src="/img/terrace/1_1.jpg" alt="" />
+          <img class="slider_img" src="/img/terrace/3.jpeg" alt="" />
+          <img class="slider_img" src="/img/terrace/4.jpg" alt="" />
+          <img class="slider_img" src="/img/terrace/5.JPG" alt="" />
+          <img class="slider_img" src="/img/terrace/6.jpg" alt="" />
+          <img class="slider_img" src="/img/terrace/6_1.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/1.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/16.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/2.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/24 — копия.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/25 — копия.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/3.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/4.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/5.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/555.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/6.png" alt="" />
+          <img class="slider_img" src="/img/industrial/7.jpg" alt="" />
+          <img class="slider_img" src="/img/industrial/8.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/1.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/11.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/12.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/14.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/2.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/23.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/3.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/34.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/5.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/6.jpg" alt="" />
+          <img class="slider_img" src="/img/cotag/IMG_3307.JPG" alt="" />
+        </div>
+      </div>
+    </div>
+      <p class="pvh_text">ПВХ МЕМБРАНА</p>
+      <a name="pvh"></a>
+<container class="pvh_block">
+<div class="pvh_block_mini">
+        <div class="pvh_text_mini"> Реальный срок службы без ремонтов более 20 лет</div>
+        <div class="pvh_text_mini"> Огнестойкий материал</div>
+      </div>
+      <div class="pvh_block_mini">
+        <div class="pvh_text_mini"> Можно монтировать на неровные поверхности</div>
+      <div class="pvh_text_mini"> Высокая устойчивость к УФ</div>
+      </div>
+      <div class="pvh_block_mini">
+        <div class="pvh_text_mini"> Кровля полностью герметична</div>
+        <div class="pvh_text_mini"> Монтируется при любых погодных условиях</div>
+      </div>
+    
+  </container>
+
+
+        <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+        type="text/javascript"
+        src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script src="/__/firebase/8.6.5/firebase-app.js"></script>
+        <script type="text/javascript" src="/script/slick.js"></script>
+
+        <script src="/script/script.js"></script>
+
+    
+    
+    
+  </body>
+
+  <footer> 
+    <p class="txt_2">Оставляйте заявку и получайте расчёт стоимости монтажа Вашей кровли всего за 30 минут!</p>
+  </footer>
+</html>
