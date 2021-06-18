@@ -736,6 +736,11 @@ p.pvh_text {
   .header_txt {
     font-size: 12px;
   }
+
+  .block_3_li p {
+    font-size: 11px;
+    justify-content: space-between;
+  }
 }
 
 /*-------------------------------*/
