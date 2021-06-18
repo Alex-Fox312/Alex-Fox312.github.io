@@ -5,6 +5,7 @@
 
 html {
   font-size: 18px;
+  font-style: normal;
   font-weight: bold;
   color: #282829;
   font-family: benne;
@@ -102,9 +103,16 @@ header {
   text-align: center;
 }
 
+.text_block_3 {
+  align-items: center;
+  width: 23%;
+  padding: 1%;
+  height: 25%;
+}
+
 .block_3 {
   justify-content: center;
-  text-align: left;
+  text-align: center;
   display: flex;
   height: 2rem;
   padding: 1rem;
@@ -125,9 +133,23 @@ li .block_3_li {
   margin-top: -2rem;
 }
 
-.dot {
+p .dot {
   color: #00a119;
-  font-size: 1.5rem;
+  font-size: 3.5rem;
+  margin-top: 30rem;
+}
+
+.dot_block {
+  color: #00a119;
+  font-size: 3.5rem;
+  margin-top: -1rem;
+  width: 87%;
+  display: flex;
+  align-items: center;
+}
+
+.text_block_3 {
+  color: #000;
 }
 
 .marg {
@@ -155,11 +177,12 @@ li .block_3_li {
 
 .info.block_3 {
   height: 5rem;
-  width: 95%;
+  width: 90%;
+  line-height: 1rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
 }
 
@@ -306,7 +329,7 @@ li .block_3_li {
 
 p.pvh_text {
   width: 98%;
-  height: 5rem;
+  height: 2.6rem;
   font-size: 19px;
   align-items: center;
   display: flex;
@@ -347,6 +370,7 @@ footer {
 
 p.pvh_text {
   width: 95%;
+  height: 2.6rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -399,6 +423,7 @@ p.pvh_text {
     font-weight: bold;
     width: 95%;
     font-size: 22px;
+    height: 2.6rem;
   }
 
   .button_left_img {
@@ -453,6 +478,7 @@ p.pvh_text {
 
   p.pvh_text {
     font-weight: bold;
+    height: 2.6rem;
     width: 95%;
     font-size: 21px;
   }
@@ -549,7 +575,7 @@ p.pvh_text {
   }
 
   .block_3 p {
-    font-size: 12px;
+    font-size: 17px;
   }
 
   .prioritet .txt_1 {
@@ -652,6 +678,7 @@ p.pvh_text {
 
   p.pvh_text {
     font-weight: bold;
+    height: 2.6rem;
     width: 95%;
     padding: 1%;
     font-size: 14px;
@@ -716,7 +743,6 @@ p.pvh_text {
 
   .block_3_li {
     font-size: 12px;
-    width: 45%;
   }
 
   .punkt_div {
@@ -748,7 +774,8 @@ p.pvh_text {
   }
 
   .block_3_li p {
-    font-size: 11px;
+    font-size: 17px;
+    width: 95%;
     justify-content: space-between;
   }
 }
